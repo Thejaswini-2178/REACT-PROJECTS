@@ -3,12 +3,12 @@ import { BudgetContext } from '../context/BudgetContext'
 import Chart from './Chart'
 
 const Reports = () => {
-  const { 
-    transactions, 
-    getMonthlyReport, 
-    activeView 
+  const {
+    transactions,
+    getMonthlyReport,
+    activeView
   } = useContext(BudgetContext)
-  
+
   const [currentDate] = useState(new Date())
   const [report, setReport] = useState(null)
 
@@ -33,10 +33,10 @@ const Reports = () => {
         <div className="chart-card">
           <h3 className="chart-title">Spending Breakdown</h3>
           <div className="chart-container">
-            <Chart 
-              type="pie" 
-              data={report.byCategory} 
-              expensesTotal={report.expenses} 
+            <Chart
+              type="pie"
+              data={report.byCategory}
+              expensesTotal={report.expenses}
             />
           </div>
         </div>
