@@ -13,7 +13,7 @@ const Modal = () => {
       <div className="modal">
         <div className="modal-header">
           <h3 className="modal-title">Add Transaction</h3>
-          <button 
+          <button
             className="modal-close"
             onClick={() => setIsModalOpen(false)}
           >
